@@ -1,0 +1,39 @@
+{
+    "joint_embed_shape": 512,
+    "audio_cfg": {
+        "model_type": "Conformer",
+        "model_name": "mini",
+        "pretrained_audio": "",
+        "mel_bins": 80,
+        "max_time_bins": 100,
+        "attn_dim": 256,
+        "layers": 4,
+        "units": 1024,
+        "heads": 4,
+        "pos_enc_layer_type": "rel_pos",
+        "ffn_layer_type": "linear",
+        "ffn_conv_kernel_size": 0,
+        "use_macaron_style_in_conformer": true,
+        "self_attn_layer_type": "rel_selfattn",
+        "activation_type": "swish",
+        "dropout_rate": 0.2,
+        "pos_dropout_rate": 0.2,
+        "attn_dropout_rate": 0.2    
+},
+    "text_cfg": {
+        "model_type": "bert",
+        "model_name": "mini",
+        "pretrained_text": "",
+        "load_pretrained_weights": true,
+        "context_length": 77,
+        "max_num_subword": 5,
+        "width": 256,
+        "vocab_size": 49408,
+        "heads": 8,
+        "layers": 4
+    },
+    "enable_fusion": true,
+    "fusion_type": "attnpool_1d",
+    "mlp_act": "relu",
+    "quick_gelu": false
+}

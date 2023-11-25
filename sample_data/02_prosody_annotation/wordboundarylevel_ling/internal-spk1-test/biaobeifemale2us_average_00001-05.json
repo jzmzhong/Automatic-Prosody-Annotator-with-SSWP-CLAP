@@ -1,0 +1,9 @@
+{
+    "word": "the",
+    "word_index": 5,
+    "full_sent": "He had the key to the garage for job purposes .",
+    "start": 0.94,
+    "end": 1.05,
+    "boundary": "LW",
+    "punc_index": null
+}

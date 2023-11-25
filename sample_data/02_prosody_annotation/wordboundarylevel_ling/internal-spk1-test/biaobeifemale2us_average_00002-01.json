@@ -1,0 +1,9 @@
+{
+    "word": "has",
+    "word_index": 1,
+    "full_sent": "He has a good voice .",
+    "start": 0.22,
+    "end": 0.44,
+    "boundary": "LW",
+    "punc_index": null
+}

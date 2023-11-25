@@ -1,0 +1,21 @@
+CUDA_VISIBLE_DEVICES=0 python -m src.evaluate.lp_main_words2sent \
+    --exp-name "01_inference_prosody_annotation" \
+    --datasetpath "./sample_data/02_prosody_annotation" \
+    --valid-datasets "internal-spk1-test" \
+    --featurelevel "wordboundarylevel" \
+    --prefetch-factor 2 \
+    --data-filling "pad" \
+    --data-truncating "cent_trunc" \
+    --model-name Conformer-mini-bert-mini \
+    --lp-pretrained "./released_model/finetuned_prosody_annotator.pt" \
+    --precision "fp32" \
+    --batch-size 4 \
+    --workers 8 \
+    --logs "./sample_model" \
+    --output-predictions \
+    --seed 42 \
+    --classification "bilstm" \
+    --lp-metrics "acc,f1" \
+    --lp-audio-weight 1.0 \
+    --lp-act "softmax" \
+    --class-label-path "./class_labels/prosodic_boundaries_labels_nopunc.json" \
