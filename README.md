@@ -1,13 +1,23 @@
 # Multi-modal Automatic Prosody Annotation with Contrastive Pretraining of SSWP
 
 <!-- ### [Arxiv](https://arxiv.org/abs/2309.05423) &nbsp;&nbsp;&nbsp;&nbsp; [Demo](https://jzmzhong.github.io/Automatic-Prosody-Annotator-With-SSWP-CLAP/) -->
-<table style="border:1px solidb ack;margin-left:auto;margin-right:auto;border-spacing:20px;">
+<!-- <table style="border:1px solidb ack;margin-left:auto;margin-right:auto;border-spacing:20px;">
     <tr>
     <td><h3><a href="https://arxiv.org/abs/2309.05423">Arxiv</a></h3></td>
     <td><h3><a href="https://jzmzhong.github.io/Automatic-Prosody-Annotator-With-SSWP-CLAP">Demo</a></h3></td>
-    <td><h3><a href="./">Code (Here)</a></h3></td>
+    <td><h3><a href="https://github.com/jzmzhong/Automatic-Prosody-Annotator-with-SSWP-CLAP">Code (Here)</a></h3></td>
     </tr>
-</table>
+</table> -->
+
+<!-- ###  [Demo](https://jzmzhong.github.io/Automatic-Prosody-Annotator-With-SSWP-CLAP) [Code(Here)](https://github.com/jzmzhong/Automatic-Prosody-Annotator-with-SSWP-CLAP) -->
+
+This is the official implementation of the following paper ([Arxiv](https://arxiv.org/abs/2309.05423)):
+
+> **Multi-Modal Automatic Prosody Annotation with Contrastive Pretaining of SSWP** \
+> Jinzuomu Zhong, Yang Li, Hui Huang, Jie Liu, Zhiba Su, Jing Guo, Benlai Tang, Fengjie Zhu
+
+> **Abstract**: *In the realm of expressive Text-to-Speech (TTS), explicit prosodic boundaries significantly advance the naturalness and controllability of synthesized speech. While human prosody annotation contributes a lot to the performance, it is a labor-intensive and time-consuming process, often resulting in inconsistent outcomes. Despite the availability of extensive supervised data, the current benchmark model still faces performance setbacks. To address this issue, a two-stage automatic annotation pipeline is novelly proposed in this paper. Specifically, in the first stage, we propose contrastive text-speech pretraining of Speech-Silence and Word-Punctuation (SSWP) pairs. The pretraining procedure hammers at enhancing the prosodic space extracted from joint text-speech space. In the second stage, we build a multi-modal prosody annotator, which consists of pretrained encoders, a straightforward yet effective text-speech feature fusion scheme, and a sequence classifier. Extensive experiments conclusively demonstrate that our proposed method excels at automatically generating prosody annotation and achieves stateof-the-art (SOTA) performance. Furthermore, our novel model has exhibited remarkable resilience when tested with varying amounts of data.*
+
 
 # Model Architecture
 
@@ -27,7 +37,7 @@ The results of our proposed work, compared with previous benchmarks, are shown b
 </figure>
 
 
-### Audio Samples Demo are avaialble at: [Demo](https://jzmzhong.github.io/Automatic-Prosody-Annotator-With-SSWP-CLAP/)
+Audio Samples Demo are avaialble at: [Demo](https://jzmzhong.github.io/Automatic-Prosody-Annotator-With-SSWP-CLAP/)
 
 
 # Quickstart
@@ -79,5 +89,9 @@ bash ./example/01_inference_prosody_annotation.sh
 
 # References
 
+We are grateful for the following open-source contributions. Most of our codes are based on [LAION-AI's CLAP](https://github.com/LAION-AI/CLAP), with the Conformer part from [ESPNET](https://github.com/espnet/espnet).
+
 - [LAION-AI's CLAP](https://github.com/LAION-AI/CLAP)
+- [ESPNET](https://github.com/espnet/espnet)
 - [CLAPSpeech](https://clapspeech.github.io/)
+- [Automatic Prosody Annotation](https://github.com/Daisyqk/Automatic-Prosody-Annotation)
