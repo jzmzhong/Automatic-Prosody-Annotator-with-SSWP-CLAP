@@ -83,7 +83,7 @@ bash ./example/01_inference_prosody_annotation.sh
 ### Released Multi-modal Prosody Annotator 
 
 ```
-./released_model/pretrained_SSWP_CLAP.pt
+./released_model/finetuned_prosody_annotator.pt
 ```
 
 
