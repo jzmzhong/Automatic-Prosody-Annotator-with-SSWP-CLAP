@@ -14,10 +14,9 @@
 This is the official implementation of the following paper ([Arxiv](https://arxiv.org/abs/2309.05423)):
 
 > **Multi-Modal Automatic Prosody Annotation with Contrastive Pretaining of SSWP** \
-> Jinzuomu Zhong, Yang Li, Hui Huang, Jie Liu, Zhiba Su, Jing Guo, Benlai Tang, Fengjie Zhu
+> Jinzuomu Zhong, Yang Li, Hui Huang, Korin Richmond, Jie Liu, Zhiba Su, Jing Guo, Benlai Tang, Fengjie Zhu
 
-> **Abstract**: *In the realm of expressive Text-to-Speech (TTS), explicit prosodic boundaries significantly advance the naturalness and controllability of synthesized speech. While human prosody annotation contributes a lot to the performance, it is a labor-intensive and time-consuming process, often resulting in inconsistent outcomes. Despite the availability of extensive supervised data, the current benchmark model still faces performance setbacks. To address this issue, a two-stage automatic annotation pipeline is novelly proposed in this paper. Specifically, in the first stage, we propose contrastive text-speech pretraining of Speech-Silence and Word-Punctuation (SSWP) pairs. The pretraining procedure hammers at enhancing the prosodic space extracted from joint text-speech space. In the second stage, we build a multi-modal prosody annotator, which consists of pretrained encoders, a straightforward yet effective text-speech feature fusion scheme, and a sequence classifier. Extensive experiments conclusively demonstrate that our proposed method excels at automatically generating prosody annotation and achieves stateof-the-art (SOTA) performance. Furthermore, our novel model has exhibited remarkable resilience when tested with varying amounts of data.*
-
+> **Abstract**: *In expressive and controllable Text-to-Speech (TTS), explicit prosodic features significantly improve the naturalness and controllability of synthesised speech. However, manual prosody annotation is labor-intensive and inconsistent. To address this issue, a two-stage automatic annotation pipeline is novelly proposed in this paper. In the first stage, we use contrastive pretraining of Speech-Silence and Word-Punctuation (SSWP) pairs to enhance prosodic information in latent representations. In the second stage, we build a multi-modal prosody annotator, comprising pretrained encoders, a text-speech fusing scheme, and a sequence classifier. Experiments on English prosodic boundaries demonstrate that our method achieves state-of-the-art (SOTA) performance with 0.72 and 0.93 f1 score for Prosodic Word and Prosodic Phrase boundary respectively, while bearing remarkable robustness to data scarcity. *
 
 # Model Architecture
 
@@ -33,7 +32,7 @@ This is the official implementation of the following paper ([Arxiv](https://arxi
 <h3>Objective Evaluation</h3>
 The results of our proposed work, compared with previous benchmarks, are shown below.
 <figure>
-<p style="text-align:center"><img src="./figs/objective.png" alt="AVSE" height=140px/></p>
+<p style="text-align:center"><img src="./figs/objective.png" alt="AVSE" height=120px/></p>
 </figure>
 
 
